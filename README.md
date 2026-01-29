@@ -55,7 +55,7 @@ cmake --build build -j
 
 ```
 
-🧪 Benchmarked Operations
+##🧪 Benchmarked Operations
 For each container:
 
 Insert
@@ -73,7 +73,7 @@ Key erase for unordered_map
 
 All tests use the same generated key set for consistency.
 
-📊 Allocation Tracking
+##📊 Allocation Tracking
 A custom allocator counts:
 
 Number of allocations
@@ -90,7 +90,7 @@ list → one allocation per element
 
 unordered_map → bucket + node allocations
 
-🔁 Iterator Invalidation Summary
+##🔁 Iterator Invalidation Summary
 vector
 Reallocation invalidates all iterators, references, pointers
 
@@ -109,7 +109,7 @@ rehash invalidates all iterators
 
 erase invalidates only erased element
 
-📈 What You Learn From This Project
+##📈 What You Learn From This Project
 Why vector is fastest for contiguous data
 
 Why list is slow despite O(1) erase
@@ -120,7 +120,7 @@ Real-world behavior of STL allocators
 
 Iterator safety rules in practice
 
-🚀 Possible Improvements
+##🚀 Possible Improvements
 ASCII bar charts for timings
 
 CSV/JSON export of results
@@ -131,13 +131,13 @@ Randomized erase workloads
 
 Command-line parameters
 
-🛠 Requirements
+##🛠 Requirements
 C++20 compatible compiler (GCC, Clang, MSVC)
 
 CMake (optional)
 
-📜 License
+##📜 License
 MIT License (feel free to use and modify)
 
-⭐ Author
+##⭐ Author
 Built as a learning and performance exploration project for STL containers in C++.
