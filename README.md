@@ -58,15 +58,15 @@ cmake --build build -j
 ## 🧪 Benchmarked Operations
 For each container:
 
-Insert
+- Insert : 
 Sequential insertion of N elements
 
-Find
+- Find : 
 Linear search (std::find) for vector/deque/list
 
 Hash lookup for unordered_map
 
-Erase
+- Erase : 
 Range erase for vector/deque/list
 
 Key erase for unordered_map
@@ -76,19 +76,19 @@ All tests use the same generated key set for consistency.
 ## 📊 Allocation Tracking
 A custom allocator counts:
 
-Number of allocations
+- Number of allocations
 
-Number of deallocations
+- Number of deallocations
 
-Total allocated bytes
+- Total allocated bytes
 
 This highlights:
 
-vector → few large allocations
+- vector → few large allocations
 
-list → one allocation per element
+- list → one allocation per element
 
-unordered_map → bucket + node allocations
+- unordered_map → bucket + node allocations
 
 ## 🔁 Iterator Invalidation Summary
 vector: Reallocation invalidates all iterators, references, pointers
