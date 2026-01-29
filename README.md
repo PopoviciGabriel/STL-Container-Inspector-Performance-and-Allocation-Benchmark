@@ -91,34 +91,30 @@ list → one allocation per element
 unordered_map → bucket + node allocations
 
 ## 🔁 Iterator Invalidation Summary
-vector
-Reallocation invalidates all iterators, references, pointers
+vector: Reallocation invalidates all iterators, references, pointers
 
-erase invalidates iterators from erased position to end
+erase:  invalidates iterators from erased position to end
 
-deque
-insert/erase may invalidate iterators (implementation dependent)
+deque: insert/erase may invalidate iterators (implementation dependent)
 
-list
-insert does NOT invalidate iterators
+list: insert does NOT invalidate iterators
 
-erase invalidates only erased elements
+erase: invalidates only erased elements
 
-unordered_map
-rehash invalidates all iterators
+unordered_map: rehash invalidates all iterators
 
 erase invalidates only erased element
 
 ## 📈 What You Learn From This Project
-Why vector is fastest for contiguous data
+- Why vector is fastest for contiguous data
 
-Why list is slow despite O(1) erase
+- Why list is slow despite O(1) erase
 
-How memory layout affects performance
+- How memory layout affects performance
 
-Real-world behavior of STL allocators
+- Real-world behavior of STL allocators
 
-Iterator safety rules in practice
+- Iterator safety rules in practice
 
 ## 🚀 Possible Improvements
 ASCII bar charts for timings
