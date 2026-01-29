@@ -52,6 +52,9 @@ Option 2 — CMake
 cmake -S . -B build
 cmake --build build -j
 ./build/stl_inspector
+
+```
+
 🧪 Benchmarked Operations
 For each container:
 
